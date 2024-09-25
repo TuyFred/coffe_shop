@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Internal CSS */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #0056b3;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .home-content {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .home-content h1 {
+            font-size: 48px;
+            color: #333;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">MIFOTRA</a>
+        <div class="ml-auto">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                Login
+            </button>
+            <a class="btn btn-secondary" href="#">Register</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container home-content">
+        <h1>Welcome to MIFOTRA E-Recruitment</h1>
+        <p>Apply for jobs, track applications, and manage your recruitment process with ease.</p>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to E-Recruitment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Enter your email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Enter your password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-eye" id="togglePassword"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-primary">Login</button>
+                        <a href="#" class="text-center d-block mt-3">Reset password?</a>
+                        <p class="text-center mt-2">If you don't have an account, <a href="#">Register</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 MIFOTRA. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to toggle password visibility -->
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+
+</body>
+</html>
