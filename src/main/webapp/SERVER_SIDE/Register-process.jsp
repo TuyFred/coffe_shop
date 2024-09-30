@@ -25,7 +25,7 @@
         int rowsInserted = pstmt.executeUpdate();
         if (rowsInserted > 0) {
             out.println("<h3>Registration successful!</h3>");
-            out.println("<p><a href='login.jsp'>Click here to login</a></p>");
+            out.println("<p><a href='fron-end/login.jsp'>Click here to login</a></p>");
         }
     } catch (SQLException e) {
         e.printStackTrace();

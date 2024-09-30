@@ -18,3 +18,5 @@ try (Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
     response.sendRedirect("manage-items.jsp?error=Error+deleting+item");
 }
 %>
+
+

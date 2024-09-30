@@ -94,7 +94,7 @@
         <div class="row mt-4">
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/espraso.png" class="card-img-top" alt="Espresso">
+                    <img src="../images/espraso.png" class="card-img-top" alt="Espresso">
                     <div class="card-body">
                         <h5 class="card-title">Espresso</h5>
                         <p class="card-text">$2.50</p>
@@ -104,7 +104,7 @@
             </div>
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/latte.jpeg" class="card-img-top" alt="Latte">
+                    <img src="../images/latte.jpeg" class="card-img-top" alt="Latte">
                     <div class="card-body">
                         <h5 class="card-title">Latte</h5>
                         <p class="card-text">$3.00</p>
@@ -114,7 +114,7 @@
             </div>
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/cup.png" class="card-img-top" alt="Cappuccino">
+                    <img src="../images/cup.png" class="card-img-top" alt="Cappuccino">
                     <div class="card-body">
                         <h5 class="card-title">Cappuccino</h5>
                         <p class="card-text">$3.50</p>
@@ -124,7 +124,7 @@
             </div>
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/mocha.png" class="card-img-top" alt="Mocha">
+                    <img src="../images/mocha.png" class="card-img-top" alt="Mocha">
                     <div class="card-body">
                         <h5 class="card-title">Mocha</h5>
                         <p class="card-text">$4.00</p>
@@ -134,7 +134,7 @@
             </div>
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/americano.jpeg" class="card-img-top" alt="Americano">
+                    <img src="../images/americano.jpeg" class="card-img-top" alt="Americano">
                     <div class="card-body">
                         <h5 class="card-title">Americano</h5>
                         <p class="card-text">$2.00</p>
@@ -144,7 +144,7 @@
             </div>
             <div class="col-md-2">
                 <div class="card">
-                    <img src="images/rwanda.jpeg" class="card-img-top" alt="Rwandan Coffee">
+                    <img src="../images/rwanda.jpeg" class="card-img-top" alt="Rwandan Coffee">
                     <div class="card-body">
                         <h5 class="card-title">Rwanda Coffee</h5>
                         <p class="card-text">$3.50</p>
