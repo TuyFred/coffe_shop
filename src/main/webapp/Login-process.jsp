@@ -30,13 +30,13 @@
 
             // Redirect based on user role
             if ("admin".equals(userRole)) {
-                response.sendRedirect("../SERVER-SIDE/admin-dashboard.jsp"); // Redirect to admin dashboard
+                response.sendRedirect("admin-dashboard.jsp"); // Redirect to admin dashboard
             } else {
-                response.sendRedirect("../SERVER_SIDE/customer-dashboard.jsp"); // Redirect to customer dashboard
+                response.sendRedirect("customer-dashboard.jsp"); // Redirect to customer dashboard
             }
         } else {
             out.println("<h3>Invalid username or password!</h3>");
-            out.println("<p><a href='../SERVER-SIDE/login.jsp'>Try again</a></p>");
+            out.println("<p><a href='login.jsp'>Try again</a></p>");
         }
     } catch (SQLException e) {
         e.printStackTrace();

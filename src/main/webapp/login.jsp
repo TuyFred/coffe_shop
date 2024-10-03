@@ -67,7 +67,7 @@
 <body>
     <div class="login-container">
         <h2><i class="fas fa-coffee"></i> Login</h2>
-        <form action="../SERVER_SIDE/Login-process.jsp" method="post">
+        <form action="Login-process.jsp" method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <div class="input-group">

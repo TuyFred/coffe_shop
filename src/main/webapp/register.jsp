@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit User - Coffee Shop</title>
+    <title>Register - Coffee Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -20,10 +20,10 @@
         }
         .form-container {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            padding: 40px; /* Ample padding for a professional look */
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            width: 400px;
+            width: 400px; /* Increased width for a professional form size */
         }
         h2 {
             color: #ffffff;
@@ -44,24 +44,39 @@
             border: none;
             color: white;
         }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+            color: #ffffff;
+        }
+        .login-link a {
+            color: #FF78AC; /* Link color */
+        }
     </style>
 </head>
 <body>
     <div class="container form-container">
-        <h2>Edit User Details</h2>
-        <form action="EditUserProcess.jsp" method="post">
+        <h2>Register</h2>
+        <form action="Register-process.jsp" method="post">
             <div class="mb-3 input-group">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required value="<%= session.getAttribute("username") %>">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
             </div>
             <div class="mb-3 input-group">
                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required value="<%= session.getAttribute("email") %>">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100"><i class="fas fa-save"></i> Save Changes</button>
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100"><i class="fas fa-user-plus"></i> Register</button>
         </form>
+        <div class="login-link">
+            <p>If you have an account, <a href="login.jsp">click here to login</a>.</p>
+        </div>
         <div class="text-center mt-3">
-            <a href="admin-dashboard.jsp" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Profile</a>
+            <a href="index.jsp" class="btn btn-secondary"><i class="fas fa-home"></i> Back to Home</a>
         </div>
     </div>
 

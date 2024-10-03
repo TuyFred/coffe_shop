@@ -85,7 +85,7 @@ try (Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
             <h2>Manage Items</h2>
             <div class="card">
                 <div class="card-body">
-                    <a href="addItem.jsp" class="btn btn-primary"><i class="fas fa-plus"></i> Add New Item</a>
+                    <a href="addMenuItem.jsp" class="btn btn-primary"><i class="fas fa-plus"></i> Add New Item</a>
                     <button onclick="downloadItems()" class="btn btn-success mt-3"><i class="fas fa-download"></i> Download Items</button>
                     <input type="text" id="searchInput" placeholder="Search for items..." class="form-control mb-3" onkeyup="filterItems()">
                     <table class="table table-striped" id="itemTable">

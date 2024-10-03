@@ -12,10 +12,10 @@ try (Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
      PreparedStatement pstmt = conn.prepareStatement("DELETE FROM menu_items WHERE item_id = ?")) {
     pstmt.setInt(1, itemId);
     pstmt.executeUpdate();
-    response.sendRedirect("manage-items.jsp?message=Item+deleted+successfully");
+    response.sendRedirect("admin-dashboard.jsp?message=Item+deleted+successfully");
 } catch (SQLException e) {
     e.printStackTrace(); // Handle exception
-    response.sendRedirect("manage-items.jsp?error=Error+deleting+item");
+    response.sendRedirect("admin-dashboard.jsp?error=Error+deleting+item");
 }
 %>
 
